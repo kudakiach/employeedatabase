@@ -1,0 +1,26 @@
+<h3>{{{viewTitle}}}</h3>
+<div>{{{success}}}</div>
+<form action="./employee" method="post" autocomplete="off">
+	<!-- <input type="hidden" name="_id" value="{{employee._id}}"> -->
+	<div class="form-group">
+		<label>Full Name</label>
+		<input type="text" name="fullName" class="form-control" placeholder="Full Name" value="">
+	</div>
+	<div class="form-group">
+		<label>Emaiil</label>
+		<input type="text" name="email" class="form-control" placeholder="Email" value="">
+	</div>
+	<div class="row">
+		<div class="col-md-6 form-group"><label>Mobile</label>
+				<input type="text" name="mobile" class="form-control" placeholder="Mobile" value=""></div>
+		<div class="form-group col-md-6">
+			<label>City</label>
+			<input type="text" name="city" class="form-control" placeholder="City" value="">
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<button type="submit" class="btn btn-info"><i class="fa fa-database"></i>  Submit</button>
+		<a href="/list" class="btn btn-dark"><i class="fa fa-list-alt"></i> View List</a>
+	</div>
+</form>

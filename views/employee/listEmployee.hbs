@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Employee</title>
+</head>
+<body>
+	<h3><a href="/" class="btn btn-success"> <i class="fa fa-plus"></i> Add Employee</a> LIst Employees</h3>
+	<table class="table table-striped">
+		<thead class="">
+			<th>Full Names</th>
+			<th>Email</th>
+			<th>Mobile</th>
+			<th>City</th>
+			<th></th>
+		</thead>
+		<tbody>
+			{{#each list}}
+			<tr>
+				<td>{{this.fullName}}</td>
+				<td>{{this.email}}</td>
+				<td>{{this.mobile}}</td>
+				<td>{{this.city}}</td>
+				<td>
+					<a href="/update/{{this._id}}"><span class="fa fa-pencil" aria-hidden="true"></span></a>
+					<a href="/delete/{{this._id}}"><span class="fa fa-trash" aria-hidden="true"></span></a>
+				</td>
+			</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</body>
+</html>
